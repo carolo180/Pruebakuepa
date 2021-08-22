@@ -1,0 +1,38 @@
+#screentwo{
+     background-color: rgb(22, 18, 18);
+}
+#underscreen{
+    border-bottom-left-radius: 10%;
+    background-color: rgb(253, 249, 249);
+    width: 84vw;
+    height: 59vh;
+}
+#underscreen h1{
+    text-align: center;
+    font-size: 2rem;
+}
+#agenda{
+    background-color: rgb(253, 249, 249);
+    width: 40%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+#agenda h2 {
+    font-size: 1.3rem;
+    padding-left: 15px;
+    font-weight: bold;
+    
+}
+table p {
+    font-weight: bold;
+    padding-left: 10px;
+}
+#listcolor{
+    background-color: rgb(253, 249, 249);
+ }
+
+table{
+    background-color: rgb(231, 212, 195);
+    width: 100%;
+    border-left-color: teal;
+}

@@ -1,0 +1,256 @@
+.screen{
+    display:grid;
+    background-color:rgb(22, 18, 18);
+    width: 20vw;
+    font-family: 'Poppins', sans-serif;
+}
+#sites1{
+    margin-left: 80px;
+    max-height: 35px;
+    margin-top: 50px;
+    border-radius: 0.6rem;
+    border: 1px solid #d3d6e4;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.274);
+    width: 250px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 8px;
+    
+}
+#sites1:focus{
+    outline: none;
+}
+::placeholder{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: rgba(63, 61, 61, 0.418);
+    font-size: 1.4rem;
+    
+}
+#buscar{
+    background-color: rgb(253, 249, 249);
+    margin-top: 28px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#mainscreen{
+    background-color: rgb(253, 249, 249);
+    border-top-left-radius: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+#searchdate{
+    display: flex;
+}
+
+#datepick{
+    margin-left: 40vw;
+    margin-top: 20px;
+}
+#saludo{
+    font-size: 2.8rem;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+/*--barra de progreso circular*/
+
+#barra{
+    margin-left: 6%;
+    background-color: rgb(231, 212, 195);
+    width: 37%;
+    height: 17%;
+    border-radius: 5%;
+}
+.progress {
+    width: 109px;
+    height: 110px !important;
+    float: left;
+    line-height: 20px;
+    background: none;
+    margin: 20px;
+    box-shadow: none;
+    position: relative;
+    
+}
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 2px;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: rgb(247, 247, 247);
+    font-size: 24px;
+    color: rgb(156, 41, 6);
+    line-height: 95px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-weight:bold;
+    border:4px solid #f4a261;
+}
+
+.progress.blue .progress-bar {
+    border-color:  rgb(141, 17, 141);
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(134deg)
+    }
+}
+#cifras{
+    display: flex;
+}
+
+#stadistic{
+    display: inline-flex;
+    margin-top: 3%;
+}
+#leads{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+#stadistic h1 {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#leads1{
+    display: flex;
+}
+#getleads{
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+}
+#calls{
+    display: flex;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+/*--barra de progreso lineal*/
+
+#golds{
+    background-color: rgb(231, 212, 195);
+    width: 20%;
+    margin-left: 50px;
+    border-radius: 5%;
+}
+#golds h1{
+    text-align: center;
+}
+#getleads{
+    display: flex;
+}
+#getleads p{
+  margin-left: 10%;
+}
+.progresss{
+    position: relative;
+    height:15px;
+    width: 80%;
+    border: 2px solid #f4a261;
+    border-radius: 15px;
+    margin-left: 9%;
+    margin-top: 2%;
+}
+.progresss .color{
+    position: absolute;
+    background: linear-gradient(-90deg,  rgb(141, 17, 141), #f4a261);
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    animation: progres 4s forwards linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    
+    100%{
+        width: 85%;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+.startmenu{
+    display: inline-block;
+    background-color: rgb(22, 18, 18);
+    width: 10%;
+    max-height: 101vh;
+}
+.logo{
+    width: 100px;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+#icons{
+    margin-top: 50px;
+}
+
+#icons i{
+    color: rgb(160, 158, 154);
+    display:block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-left: 30%;
+}
+
+#user{
+    margin-top:45vh;
+    margin-left: 1vw;
+}
+#user i{
+    color: rgb(160, 158, 154);
+    display:block;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    margin-left: 20%;
+
+}
+
+.usuario{
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 10%;
+}
