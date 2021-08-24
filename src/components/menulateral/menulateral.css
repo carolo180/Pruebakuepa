@@ -1,8 +1,8 @@
 .startmenu{
     display: inline-block;
     background-color: rgb(22, 18, 18);
-    width: 10%;
-    max-height: 101vh;
+    width: 8%;
+    max-height: 100vh;
 }
 .logo{
     width: 100px;
@@ -41,3 +41,28 @@
     border-radius: 100%;
     margin-left: 10%;
 }
+@media screen and (max-width:1023px){
+    .startmenu{
+        width: 18%;
+        min-height: 1700px;
+    }
+    .logo{
+        width: 55px;
+      
+    }
+  
+ }
+ @media screen and (min-width:1024px) and (max-width:1300px){
+    .startmenu{
+        width: 13%;
+        min-height: 1120px;
+    }
+ }
+ @media screen and (min-width:1301px) and (max-width:1440px){
+    .startmenu{
+        width: 13%;
+        min-height: 912px;
+    }
+ }
+  
+ 

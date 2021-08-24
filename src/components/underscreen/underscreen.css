@@ -5,34 +5,259 @@
     border-bottom-left-radius: 10%;
     background-color: rgb(253, 249, 249);
     width: 84vw;
-    height: 59vh;
+    height: 420px;
 }
-#underscreen h1{
-    text-align: center;
-    font-size: 2rem;
+
+#allsection{
+    display: flex;
 }
-#agenda{
-    background-color: rgb(253, 249, 249);
+.agenda{
+    background-color: #eed2ed59;
     width: 40%;
     margin-left: 6%;
-    margin-top: 5%;
+    margin-top: 2%;
+    border-radius: 5%;
+    max-height: 320px;
+    overflow-y: scroll;
 }
-#agenda h2 {
-    font-size: 1.3rem;
-    padding-left: 15px;
+
+#style-2::-webkit-scrollbar{
+	width: 13px;
+    background-color: rgb(231, 212, 195);
+}
+
+#style-2::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #361e4b;
+}
+.agenda h1 {
     font-weight: bold;
+    text-align: center;
     
+}
+table{
+    background-color: #eed2ed59;
+    width: 100%;
+    max-height: 500px;
 }
 table p {
     font-weight: bold;
     padding-left: 10px;
 }
-#listcolor{
+tr{
     background-color: rgb(253, 249, 249);
  }
+ table i{
+     padding-left: 5px;
+ }
+ #second{
+     margin-left: 4%;
+ }
 
-table{
-    background-color: rgb(231, 212, 195);
-    width: 100%;
-    border-left-color: teal;
-}
+ #fcontact{
+    background-color: #eed2ed59;
+     width: 17vw;
+     height: 19vh;
+     margin-left: 8%;
+     margin-top: 6%;
+     display: flex;
+     border-radius: 5%;
+ }
+ #allsection h4{
+     padding: 10px;
+ }
+ #boxcolor{
+    background: linear-gradient(-1200deg,  rgb(50, 14, 133), #b34d9d);
+    width: 60%;
+    height: 83%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 10%;
+   
+ }
+ #square1{
+     background-color: whitesmoke;
+     width: 72%;
+     height: 72%;
+     border-radius: 100%;
+     margin-top: 18px;
+     margin-left: 18px;
+ }
+ #square1 p {
+     text-align: center;
+     line-height: 93px;
+     font-size: 2.5rem;
+     font-weight: bold;
+     color: #6b379c;
+ }
+ #contacticon i{
+     font-size: 1.4rem;
+     margin-left: 20%;
+     margin-top: 5%;
+     color: rgb(75, 71, 71);
+ }
+ #leadone{
+     display: flex;
+ }
+ #fcontact2{
+    background-color: #eed2ed59;
+     width: 16vw;
+     height: 19vh;
+     margin-left: 3%;
+     margin-top: 1%;
+     display: flex;
+     border-radius: 5%;
+     margin-bottom: 20px;
+ }
+ #boxcolor2{
+    background: linear-gradient( rgb(50, 14, 133), #b34d9d);
+    width: 67%;
+    height: 83%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 10%;
+ }
+ #boxcolor3{
+    background: linear-gradient(-100deg,  rgb(50, 14, 133), #b34d9d);
+    width: 67%;
+    height: 83%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 10%;
+ }
+ #sec2{
+     display: inline-block;
+     margin-top: 1%;
+     margin-left: 5%;
+     }
+   
+     @media screen and (max-width:768px){
+        #allsection{
+            display: flex;
+            flex-direction: column;
+            min-width: 140vw;
+            background-color: rgb(253, 249, 249);
+        }
+        .agenda{
+            width: 85%;
+        }
+        #second{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 3%;
+            width: 120vw;
+            margin-top: 10%;
+           
+        }
+        #fcontact{
+            width: 65vw;
+            height: 25vh;
+            margin-left: 2%;
+            margin-top: 1%;
+            display: flex;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+        #sec2{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 3%;
+            width: 120vw;
+        }
+        #fcontact2{
+            
+             width: 65vw;
+             height: 25vh;
+             margin-left: 2%;
+             margin-top: 1%;
+             display: flex;
+             border-radius: 5%;
+             margin-bottom: 20px;
+         }
+         #boxcolor{
+             width: 90vw;
+         }
+         #boxcolor2{
+            width: 90vw;
+        }
+        #boxcolor3{
+            width: 90vw;
+        }
+      
+      
+      }
+      @media screen and (min-width:768px)and (max-width:1300px){
+        #boxcolor{
+            width: 17vw;
+        }
+        #boxcolor2{
+           width: 17vw;
+       }
+       #boxcolor3{
+           width: 17vw;
+       }
+      }
+
+      @media screen and (min-width:1024px)and (max-width:1300px){
+          #underscreen{
+              height: 40vw;
+          }
+          #allsection{
+              min-width: 80vw;
+          }
+          .agenda{
+            width: 85%;
+            margin-left: 2%;
+        }
+        #second{
+            margin-left: 0%;
+        }
+        #sec2{
+            margin-left: 1%;
+        }
+        #fcontact{
+            width: 19vw;
+            height: 21vh;
+           
+        }
+        #fcontact2{
+            width: 19vw;
+            height: 21vh;
+        }
+        #allsection h4{
+            font-size: 0.7rem;
+            padding: 10px;
+        }
+        #fcontact i{
+            font-size: 0.8rem;
+           
+        }
+        #fcontact2 i{
+            font-size: 0.8rem;
+        }
+
+      }
+      @media screen and (min-width:1301px)and (max-width:1440px){
+          #underscreen{
+              height: 388px;
+          }
+        #fcontact{
+            width: 20vw;
+            height: 21vh;
+           
+        }
+        #fcontact2{
+            width: 20vw;
+            height: 21vh;
+        }
+        #second{
+            margin-left: 0;
+        }
+        #sec2{
+            margin-left: 2%;
+        }
+      }
+
+

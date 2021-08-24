@@ -1,33 +1,31 @@
 import './screen.css';
 import DatePicker from "react-horizontal-datepicker";
-import React, {useState, useEffect} from 'react';
-
 
 
 const Screen = ()=> {
+  
      const selectedDay = (val) =>{
         console.log(val)
     };
-    
-
-    
+   
     return (
         <div className="screen">
           <section id="mainscreen">
-            
+                    
              <div id="searchdate">
+               <div id="buscador">
                     <input type="search" 
                     id="sites1" 
                     name="term"
                     placeholder="    Search.."
                     />
                     <button id="buscar"><i class="fas fa-filter"></i></button>
+                 </div>   
                    
              
                     <div id="datepick">    
                         <DatePicker getSelectedDay={selectedDay}
-                                  endDate={5}
-                                  selectDate={new Date("2020-04-30")}
+                                  endDate={4}
                                   labelFormat={"MMMM"}
                                   color={"#ff671b"}              
                               />
@@ -76,9 +74,12 @@ const Screen = ()=> {
                             </div>
                     </div>
            </section>
-
-            
+           <div id="titles">
+           <h1 id="titleplan">Tu plan de hoy</h1>
+           <h5 id="titleplan2"><a href="#">Ir a la gestion de llamados </a><i className="fas fa-chevron-right"></i></h5>
+           </div>
           </section>
+          
             
 
         </div>

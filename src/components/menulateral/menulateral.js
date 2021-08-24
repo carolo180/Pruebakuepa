@@ -1,9 +1,7 @@
 import './menulateral.css';
 import logo from '../../utils/images/logkuepa.png';
 import user from '../../utils/images/user.jpeg';
-import React, {useState, useEffect} from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter as Router,Switch,Route,Link, NavLink, Redirect} from "react-router-dom";
+
 
 
 const MenuLateral = ()=> {
