@@ -233,7 +233,7 @@
 }
 .progresss .color{
     position: absolute;
-    background: linear-gradient(-90deg,  rgb(141, 17, 141), #f4a261);
+    background: linear-gradient(-90deg,  rgb(141, 17, 141), #c2a7f3);
     width: 0px;
     height: 10px;
     border-radius: 15px;
